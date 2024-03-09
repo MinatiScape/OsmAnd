@@ -35,9 +35,10 @@ android {
 			keyPassword System.getenv("OSMAND_APK_PASSWORD")
 		}
 	}
-
+        compileSdkVersion 33
 	defaultConfig {
 		minSdkVersion 23
+		targetSdkVersion 33
 		versionCode 4700
 		versionCode System.getenv("APK_NUMBER_VERSION") ? System.getenv("APK_NUMBER_VERSION").toInteger() : versionCode
 		versionName "4.7.0"
